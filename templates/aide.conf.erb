@@ -4,12 +4,11 @@
 
 #Variables are required for openscap-security-guide
 @@define DBDIR <%= @db_path_name %>
-@@define DBDIR_TEMP <%= @db_temp_path_name %>
 
 # Database configuration
-database=file:@@{DBDIR}<%= @db_file_name %>
-database_out=file:@@{DBDIR_TEMP}<%= @db_temp_file_name %>
-database_new=file:@@{DBDIR_TEMP}<%= @db_temp_file_name %>
+database=file:@@{DBDIR}/<%= @db_file_name %>
+database_out=file:@@{DBDIR}/<%= @db_temp_file_name %>
+database_new=file:@@{DBDIR}/<%= @db_temp_file_name %>
 
 # gzip output to the database?
 gzip_dbout=<%= @gzip_dbout %>
