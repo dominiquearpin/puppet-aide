@@ -15,7 +15,6 @@ class aide::config (
   }
 
   if ($db_temp_path =~ /(.*\/)(.*\.db\.new.*)/) {
-    $db_temp_path_name = $1
     $db_temp_file_name = $2
   }
 
