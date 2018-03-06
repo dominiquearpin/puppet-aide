@@ -9,12 +9,12 @@ class aide::config (
   $config_template,
 ) {
 
-  if ($db_path =~ /(.*\/)(.*\.db)/) {
+  if ($db_path =~ /(.*\/)(.*\.db.*)/) {
     $db_path_name = $1
     $db_file_name = $2
   }
 
-  if ($db_temp_path =~ /(.*\/)(.*\.db\.new)/) {
+  if ($db_temp_path =~ /(.*\/)(.*\.db\.new.*)/) {
     $db_temp_path_name = $1
     $db_temp_file_name = $2
   }
